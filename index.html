@@ -1,112 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Student Management Portal</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body id="indexbody">
-    <nav class="navbar navbar-expand-lg" >
-        <div class="container-fluid" id="navbar-s">
-            <a class="navbar-brand" href="#">
-                <img src="img1.webp" alt="logo" width="100px" height="80px">
-            </a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active fw-bold text-light" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold text-light" href="#">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle fw-bold text-light" href="#" role="button"
-                            data-bs-toggle="dropdown">Courses</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item  " href="#">CSE</li>
-                            <!-- <li><hr class="dropdown-divide"></li> -->
-                            <li><a class="dropdown-item" href="#">AIML</li>
-                            <!-- <li><hr class="dropdown-divide"></li> -->
-                            <li><a class="dropdown-item" href="#">ECE</li>
-                            <!-- <li><hr class="dropdown-divide"></li> -->
-                            <li><a class="dropdown-item" href="#">IT</li>
-                            <!-- <li><hr class="dropdown-divide"></li> -->
-                            <li><a class="dropdown-item" href="#">EEE</li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold text-light" href="#">Contact</a>
-                    </li>
-                </ul>
-                <button role="button">Login</button>
-            </div>
-        </div>
-    </nav>
-    <div class="container-fluid" id="welcomemsg">
-        <h1 class=" p-3">Welcome Students!!</h1>
-        <p>CVRCE is ranked among the top few premier institutions in the state of Telangana and holds NIRF ranking of
-            less than 200. <br>The College is Autonomous under the UGC and accredited by the NAAC with Grade 'A'. The
-            college promotes academic research and consultancy.</p>
-            <a href="RegForm.html">
-                <button type="button" id="regbtn" >Register Now</button>
-            </a>
-        
-    </div>
-    
-    <div class="container ml-5 mr-5 mt-5">
-        <div class="row">
-            <div class="col-4">
-                <div class="card" style="height:32rem;">
-                    <img src="stuReg.img" class="card-img-top" alt="student Registration image" heiggt="150px">
-                    <div class="card-body">
-                        <h5 class="card-title">Student Registration</h5>
-                        <p>Please fill out this form with accurate information to complete your academic enrollment. All
-                            fields marked with an asterisk (*) are required.</p>
-                        <button role="button" class="btn btn-primary" type="button">Learn More</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card" style="height:32rem;">
-                    <img src="attMng.jpg" class="card-img-top" alt="student Registration image" height="150px">
-                    <div class="card-body">
-                        <h5 class="card-title">Attendence Management</h5>
-                        <p>
-                            The <strong>Attendance Management System</strong> is a cloud-based application designed to
-                            automate and streamline time-tracking operations. It replaces traditional paper registers
-                            with an efficient digital portal. The system ensures data accuracy, eliminates manual entry
-                            errors, and provides real-time tracking for organizations.
-                        </p>
-                        <button role="button" class="btn btn-primary" type="button">Learn More</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card" style="height:32rem;">
-                    <img src="ResMng.jpg" class="card-img-top" alt="student Registration image" height="150px">
-                    <div class="card-body">
-                        <h5 class="card-title">Result Management</h5>
-                        <p>
-                            The <strong>Student Result Management System (SRMS)</strong> is a web-based portal designed
-                            to automate the process of managing, computing, and distributing student examination
-                            records. It replaces traditional paper-based methods to enhance data reliability and speed
-                            up operations.
-                        </p>
-                        <button role="button" class="btn btn-primary" type="button">Learn More</button>
-                    </div>
-                </div>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-dark" id="navbar-s">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="img1.webp" width="100" height="80">
+        </a>
+        <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                        role="button"
+                        data-bs-toggle="dropdown">
+                        Courses
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item">CSE</a></li>
+                        <li><a class="dropdown-item">AIML</a></li>
+                        <li><a class="dropdown-item">ECE</a></li>
+                        <li><a class="dropdown-item">IT</a></li>
+                        <li><a class="dropdown-item">EEE</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactUs.html">Contact</a>
+                </li>
+            </ul>
+            <button class="btn btn-primary me-2">
+                Login
+            </button>
+            <button class="btn btn-light"
+                onclick="toggleDarkMode()">
+                Dark Mode
+            </button>
         </div>
     </div>
-    <div class="footer" id="footer-s">
-        <p>©copyright</p>
-        <p>Instagram ID:cvr_coe     |      youtube:cvrcoe</p>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+</nav>
 
+<div class="container mt-4">
+
+    <div class="alert alert-success alert-dismissible fade show">
+
+        <strong>Announcement!</strong>
+        Registrations are open for Academic Year 2026.
+
+        <button class="btn-close"
+            data-bs-dismiss="alert">
+        </button>
+
+    </div>
+
+</div>
+<div class="container text-center mt-5">
+    <h1>Welcome Students!</h1>
+    <p>
+        CVR College of Engineering is one of the top institutions
+        in Telangana providing quality education and placements.
+    </p>
+    <a href="RegForm.html">
+        <button class="btn btn-danger">
+            Register Now
+        </button>
+    </a>
+</div>
+<div class="container mt-5">
+
+    <div class="row">
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+
+            <div class="card h-100">
+
+                <img src="stuReg.img"
+                    class="card-img-top"
+                    height="200">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Student Registration
+                    </h5>
+
+                    <p>
+                        Register students using a secure
+                        online registration form.
+                    </p>
+
+                    <button class="btn btn-primary">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100">
+                <img src="attMng.jpg"
+                    class="card-img-top"
+                    height="200">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Attendance Management
+                    </h5>
+
+                    <p>
+                        Track attendance and maintain
+                        student records digitally.
+                    </p>
+
+                    <button class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#attendanceModal">
+
+                        Learn More
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+
+            <div class="card h-100">
+
+                <img src="ResMng.jpg"
+                    class="card-img-top"
+                    height="200">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Result Management
+                    </h5>
+
+                    <p>
+                        Store and manage examination
+                        results efficiently.
+                    </p>
+
+                    <button class="btn btn-primary">
+                        Learn More
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Modal -->
+
+<div class="modal fade"
+    id="attendanceModal">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    Attendance Management
+                </h5>
+
+                <button class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                Monitor student attendance,
+                generate reports and improve
+                accuracy.
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button class="btn btn-secondary"
+                    data-bs-dismiss="modal">
+                    Close
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FAQ -->
+
+<div class="container mt-5">
+
+    <h2 class="text-center mb-4">
+        Frequently Asked Questions
+    </h2>
+
+    <div class="accordion" id="faqAccordion">
+
+        <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+                <button class="accordion-button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1">
+
+                    How do I register?
+
+                </button>
+
+            </h2>
+
+            <div id="faq1"
+                class="accordion-collapse collapse show">
+
+                <div class="accordion-body">
+                    Click Register Now and fill the form.
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+                <button class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2">
+
+                    How do I check attendance?
+
+                </button>
+
+            </h2>
+
+            <div id="faq2"
+                class="accordion-collapse collapse">
+
+                <div class="accordion-body">
+                    Attendance is available in Dashboard.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+
+<footer id="footer-s">
+
+    <p>© 2026 Student Management Portal</p>
+
+    <p>
+        Instagram | YouTube | LinkedIn
+    </p>
+
+</footer>
+
+<script>
+function toggleDarkMode() {
+
+    document.body.classList.toggle("bg-dark");
+    document.body.classList.toggle("text-light");
+
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>

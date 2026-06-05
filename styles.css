@@ -1,29 +1,46 @@
-#navbar-s {
-    background-color: rgb(31, 48, 68);
-
+#navbar-s{
+    background-color:#1f3044;
 }
 
-#welcomemsg {
-    text-align: center;
-}
-
-button {
-    background-color: rgb(121, 170, 216);
-    padding:10px 20px;
-}
-
-#footer-s {
-    background-color:rgb(31, 48, 68) ;
-    margin-top: 20px;
-    padding:20px;
+#footer-s{
+    background-color:#1f3044;
     color:white;
-    text-align: center;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
 }
 
-#form-s {
-    background-color:rgb(121, 170, 216) ;
-    padding:50px 20px;
-    border-radius: 5px;
-    margin:20px;
+.card{
+    transition:0.3s;
 }
 
+.card:hover{
+    transform:scale(1.03);
+}
+
+.carousel img{
+    object-fit:cover;
+}
+
+body{
+    font-family:Arial, sans-serif;
+}
+
+.btn{
+    border-radius:10px;
+}
+
+table{
+    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+}
+.carousel-img{
+    height:300px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.carousel-caption{
+    background:rgba(0,0,0,0.5);
+    border-radius:10px;
+    padding:10px;
+}
