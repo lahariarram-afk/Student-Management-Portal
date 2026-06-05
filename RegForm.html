@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="form-group m-5" id="form-s">
+        <h1 style="text-align:center">Student Registration form</h1><br>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Full Name</span>
+            <input type="text" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Roll number</span>
+            <input type="text" class="form-control" placeholder="Enter your roll number" required>
+        </div>
+        <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Enter your email" required>
+            <span class="input-group-text">@example.com</span>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" minlength="10">Mobile Number</span>
+            <input type="number" class="form-control" placeholder="Enter your mobile number" required>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" for="inputgender">Gender</span>
+            <select class="form-select" id="inputgender">
+                <option selected>Choose</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <!-- <button class="btn btn-outline-secondary dropdown" type="button" data-bs-toggle="dropdown">Select</button>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item" href="#">Male</li>
+                <li class="dropdown-item" href="#">Female</li>
+            </ul> -->
+            <span class="input-group-text">Branch</span>
+            <!-- <input type="text" class="form-control" placeholder="Enter your branch" required> -->
+            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown">Select</button>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item" href="#">CSE</li>
+                <li class="dropdown-item" href="#">AIML</li>
+                <li class="dropdown-item" href="#">ECE</li>
+                <li class="dropdown-item" href="#">IT</li>
+                <li class="dropdown-item" href="#">EEE</li>
+            </ul>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Date-of-Birth</span>
+            <input type="date" class="form-control" placeholder="Enter your mobile number" required>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Address</span>
+            <textarea type="text" class="form-control" placeholder="Enter your address" required></textarea>
+        </div>
+        <div class="input-group mb-3">
+            <input type="file" class="form-control" id="inputGroupFile02">
+            <label class="input-group-text" for="inputGroupFile02">Upload</label>
+        </div>
+        <div class="input-group">
+            <div class="input-group-text">
+                <input type="checkbox" class="form-check-input">
+            </div>
+            <!-- <input type="text" class="form-control"> -->
+             <span class="input-group-text">I acknowleged and  agree to the Terms and Conditions and Privacy Policy</span>
+        </div>
+        <div style="text-align:center">
+            <a href="StuDashboard.html">
+                <button id="btn-regform" class="btn btn-danger " style="margin-top:20px;" type="button">Register</button>
+            </a>
+            
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

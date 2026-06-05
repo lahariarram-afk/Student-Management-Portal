@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-terriary">
+        <div class="container-fluid" id="navbar-s">
+            <a class="navbar-brand" href="#">
+                <img src="img1.webp" alt="logo" width="100px" height="80px">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold text-light" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-light" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold text-light" href="#" role="button"
+                            data-bs-toggle="dropdown">Courses</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item " href="#">CSE</li>
+                            <!-- <li><hr class="dropdown-divide"></li> -->
+                            <li><a class="dropdown-item" href="#">AIML</li>
+                            <!-- <li><hr class="dropdown-divide"></li> -->
+                            <li><a class="dropdown-item" href="#">ECE</li>
+                            <!-- <li><hr class="dropdown-divide"></li> -->
+                            <li><a class="dropdown-item" href="#">IT</li>
+                            <!-- <li><hr class="dropdown-divide"></li> -->
+                            <li><a class="dropdown-item" href="#">EEE</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-light" href="#">Contact</a>
+                    </li>
+                </ul>
+                <a href="stuProfile.html">
+                    <button type="button" class="btn btn-primary position-relative">
+                        Profile
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                            <!-- <span class="visually-hidden">New alerts</span> -->
+                        </span>
+                    </button>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+    <h3 style="text-align:center;padding:10px;">Dashboard</h3>
+    <div class="container mb-5 ">
+        <div class="row">
+            <div class="col-3">
+                <div class="card border-warning">
+                    <div class="card-body">
+                        <div class="card-title">Total Students</div>
+                        <div class="card-text">1,500+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card border-info">
+                    <div class="card-body">
+                        <div class="card-title">Present Students</div>
+                        <div class="card-text">1,300+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card border-danger">
+                    <div class="card-body">
+                        <div class="card-title">Absent Students</div>
+                        <div class="card-text">100+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card border-primary">
+                    <div class="card-body">
+                        <div class="card-title">Placements</div>
+                        <div class="card-text">1,200+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-3">
+        <nav class="navbar bg-body-tertiary">
+            <h3>Student Details Table</h3>
+            <form class="d-flex" role="search">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </nav>
+    </div>
+    <div class="container">
+        <table class="table border border-secondary">
+            <thead>
+                <tr>
+                    <th scope="col">Roll No</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Branch</th>
+                    <th scope="col">Attendence</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">102</td>
+                    <td scope="row">Alice</td>
+                    <td scope="row">CSE</td>
+                    <td scope="row">65</td>
+                </tr>
+                <tr>
+                    <td scope="row">115</td>
+                    <td scope="row">Mike</td>
+                    <td scope="row">CSD</td>
+                    <td scope="row">95</td>
+                </tr>
+                <tr>
+                    <td scope="row">108</td>
+                    <td scope="row">Will</td>
+                    <td scope="row">ECE</td>
+                    <td scope="row">78</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

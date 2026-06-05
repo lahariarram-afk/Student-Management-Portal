@@ -1,0 +1,29 @@
+#navbar-s {
+    background-color: rgb(31, 48, 68);
+
+}
+
+#welcomemsg {
+    text-align: center;
+}
+
+button {
+    background-color: rgb(121, 170, 216);
+    padding:10px 20px;
+}
+
+#footer-s {
+    background-color:rgb(31, 48, 68) ;
+    margin-top: 20px;
+    padding:20px;
+    color:white;
+    text-align: center;
+}
+
+#form-s {
+    background-color:rgb(121, 170, 216) ;
+    padding:50px 20px;
+    border-radius: 5px;
+    margin:20px;
+}
+
